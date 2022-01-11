@@ -5,7 +5,7 @@ class Traversal:
         self.right = None
 
 
-def preorder(x):
+def inorder(x):
     if root is None:
         return
     stack = []
@@ -27,11 +27,12 @@ def preorder(x):
         if x.right is not None:
             stack.append(x.right)
 
-
+            
 root = Traversal(1)
 root.left = Traversal(2)
 root.right = Traversal(3)
 root.left.left = Traversal(4)
 root.left.right = Traversal(5)
+inorder(root)
 
 # Ans => 4 2 5 1 3
