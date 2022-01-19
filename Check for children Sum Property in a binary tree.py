@@ -1,4 +1,4 @@
-class newNode:
+class Node:
     def __init__(self, val):
         self.val = val
         self.left = None
@@ -28,12 +28,12 @@ def sumTree(root):
                 return False
 
 
-root = newNode(10)
-root.left = newNode(8)
-root.right = newNode(2)
-root.left.left = newNode(3)
-root.left.right = newNode(5)
-root.right.right = newNode(2)
+root = Node(10)
+root.left = Node(8)
+root.right = Node(2)
+root.left.left = Node(3)
+root.left.right = Node(5)
+root.right.right = Node(2)
 
 
 if sumTree(root) == True:
