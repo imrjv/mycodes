@@ -34,3 +34,8 @@ if isBalancedTree(root):
     print("Tree is a Balanced binary tree!")
 else:
     print("Tree is not a Balanced binary tree!")
+ 
+'''
+Time Complexity: O(n^2)
+Auxiliary Space: O(n)
+'''
